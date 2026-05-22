@@ -1,13 +1,4 @@
-/* wrappers for the EVP API of OpenSSL 3+ */
-#ifndef SHA1_OPENSSL_H
-#define SHA1_OPENSSL_H
-#include <openssl/evp.h>
-
-struct openssl_SHA1_CTX {
-	EVP_MD_CTX *ectx;
-};
-
-typedef struct openssl_SHA1_CTX openssl_SHA1_CTX;
+;
 
 static inline void openssl_SHA1_Init(struct openssl_SHA1_CTX *ctx)
 {
